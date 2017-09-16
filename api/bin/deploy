@@ -1,0 +1,4 @@
+$(aws ecr get-login)
+
+docker tag farm-envy-qa:latest aws_account_id.dkr.ecr.us-east-1.amazonaws.com/state-svc:latest
+sh 'docker push aws_account_id.dkr.ecr.us-east-1.amazonaws.com/farm-envy-qa:latest'
